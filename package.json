@@ -1,0 +1,11 @@
+{
+  "name": "polling-system",
+  "version": "1.0.0",
+  "description": "A Polling system for my Backend Skill test",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "0verflowme",
+  "license": "ISC"
+}
