@@ -6,6 +6,8 @@ function home(req, res) {
 		message: "This is working",
 	});
 }
+
+// Remove a Option by ID
 async function destroy(req, res) {
 	let option = await Options.findById(req.params.id);
 	if (option) {
@@ -22,6 +24,7 @@ async function destroy(req, res) {
 	}
 }
 
+// Add a vote to a Option by ID
 async function addVote(req, res) {
 	let option = await Options.findById(req.params.id);
 	if (option) {

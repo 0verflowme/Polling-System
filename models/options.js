@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+// Options model
 const OptionsSchema = new mongoose.Schema({
 	text: {
 		type: String,

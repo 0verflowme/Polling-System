@@ -9,6 +9,7 @@ async function home(req, res) {
 	});
 }
 
+// Add A question to db
 async function createQues(req, res) {
 	let done = await Questions.create({
 		title: req.body.title,
@@ -18,6 +19,7 @@ async function createQues(req, res) {
 	});
 }
 
+// create a option and store reference in question
 async function createOption(req, res) {
 	try {
 		let ques = await Questions.findById(req.params.id);
@@ -47,6 +49,8 @@ async function createOption(req, res) {
 		});
 	}
 }
+
+// Delete the question and Options related to it
 
 async function destroy(req, res) {
 	let ques = await Questions.findById(req.params.id);
